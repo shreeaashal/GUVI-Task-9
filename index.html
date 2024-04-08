@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Data in Table</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+ <div class="form-group">
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Please fill out the form below:</p><br>
+    <form class="survey-form" id="form">
+      <div class="form-group">
+    <label for="first-name">First Name:</label>  
+    <input id="first-name" type="text" required placeholder="Enter your first name">  <br><br>  
+  </div>
+  <div class="form-group">
+  <label for="last-name">Last Name:</label>  
+    <input type="text" id="last-name" required placeholder="Enter your last name">  <br><br>
+    </div>
+    <div class="form-group">
+    <label for="Address">Address:</label>  
+    <textarea type="text" id="address" required placeholder="Enter your address"></textarea>  <br><br>
+    </div>
+    <div class="form-group">
+    <label for="City">City:</label>  
+    <input type="text" id="city" required placeholder="Enter your city">  <br><br> 
+    </div>
+    <div class="form-group">
+    <label for="State">State:</label>  
+    <input type="text" id="state" required placeholder="Enter your state">  <br><br>
+    </div>
+    <div class="form-group">
+    <label for="Pincode">Pincode:</label>  
+    <input type="text" id="pincode" required placeholder="Enter your pincode">  <br><br>
+    </div>
+  
+<div id="gender" class="form-group">
+  <label>Gender:</label><br>
+  <input type="radio" name="gender" value="male" required> Male<br>
+  <input type="radio" name="gender" value="female" required> Female<br>
+  <input type="radio" name="gender" value="other" required> Other<br><br>
+</div>
+
+    <label for="choiceoffood">Choice Of Food:</label>  
+    <select id="choiceoffood" required>
+        <option value="">Select Food</option>
+        <option>Mini-Tiffin</option>
+        <option>Meals</option>
+        <option>Snacks</option>
+        <option>Beverages</option>
+        <option>Desserts</option>
+    </select><br><br>
+    <div class="form-group">
+    <button class="btn btn-primary" id="submit" type="submit" >Submit</button>
+  </div>
+  </form>
+</div>
+
+<table class="table" id="dataTable">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Pincode</th>
+      <th>Gender</th>
+      <th>Choice Of Food</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
